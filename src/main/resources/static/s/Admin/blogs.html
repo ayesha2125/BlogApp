@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Blogs</title>
+    <link rel="stylesheet" href="../css/admin_style.css">
+
+</head>
+<body>
+<div class="navbar">
+    <h1>Blog Management</h1>
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="comments.html">Comments</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Blogs</h2>
+    <table class="table" id="blogsTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody id="blogsTableBody">
+        <!-- JS will populate -->
+        </tbody>
+        <!-- blogs will be loaded here by JS -->
+
+    </table>
+</div>
+
+<script src="../js/admin.js"></script>
+</body>
+</html>

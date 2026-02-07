@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="create-blog-page">
+
+<div class="container">
+    <h2>Create New Blog</h2>
+
+    <form id="createBlogForm">
+        <input type="text" id="blogTitle" placeholder="Blog Title" required>
+        <textarea id="blogContent" placeholder="Write your blog here..." rows="10" required></textarea>
+        <button type="submit">Publish Blog</button>
+    </form>
+
+    <button onclick="window.location.href='index.html'" class="back-btn">
+        Back to Blogs
+    </button>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

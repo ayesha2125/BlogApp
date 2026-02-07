@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home-page">
+
+<div class="navbar">
+    <div><strong>My Blog</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="create_blog.html">Create Blog</a>
+    </div>
+</div>
+
+<div class="container blog-view">
+    <h1 id="blogTitle">Loading...</h1>
+    <p class="blog-meta">
+        By <span id="blogAuthor"></span> · <span id="blogDate"></span>
+    </p>
+
+    <div class="blog-content" id="blogContent"></div>
+
+    <div class="blog-actions">
+        <button id="likeBtn">❤️ Like</button>
+    </div>
+
+    <hr>
+
+    <h3>Comments</h3>
+    <div id="commentList"></div>
+
+    <form id="commentForm">
+        <textarea id="commentText" placeholder="Write a comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+    </form>
+
+    <button class="back-btn" onclick="window.location.href='create_blog.html'">
+        ← Back to Blogs
+    </button>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

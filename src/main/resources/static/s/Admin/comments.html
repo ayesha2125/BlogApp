@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moderate Comments</title>
+    <link rel="stylesheet" href="../css/admin_style.css">
+</head>
+<body class="comments-page">
+<div class="navbar">
+    <h1>Admin Panel</h1>
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="blogs.html">Blogs</a>
+
+    </div>
+</div>
+
+<div class="container">
+    <h2>Comments</h2>
+    <table class="table" id="commentsTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Blog</th>
+            <th>User</th>
+            <th>Comment</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="commentsTableBody">
+        <!-- comments will be loaded here by JS -->
+        </tbody>
+    </table>
+</div>
+
+<script src="../js/admin.js"></script>
+</body>
+</html>

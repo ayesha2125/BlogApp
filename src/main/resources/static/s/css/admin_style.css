@@ -1,0 +1,479 @@
+/* Dashboard Admin Panel */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #fdf6fb; /* soft pastel pink */
+    color: #333;
+}
+
+/* Top Admin Panel */
+.top-panel {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #ff6f61; /* bold coral color */
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Main content */
+.main-content {
+    padding: 30px 50px;
+}
+
+/* Welcome section */
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    color: #ff6f61; /* same coral for accent */
+}
+
+.logout-btn {
+    padding: 8px 20px;
+    background-color: #ffb347; /* pastel orange */
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #ff9f1a; /* darker shade */
+}
+
+/* Dashboard cards */
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background: #fff8f3; /* pastel cream */
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: #ff6f61; /* coral accent */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Card Top Borders in cute colors */
+.card.users { border-top: 5px solid #f8b195; }    /* soft pink */
+.card.blogs { border-top: 5px solid #f67280; }    /* light rose */
+.card.comments { border-top: 5px solid #c06c84; } /* mauve */
+
+/* Responsive */
+@media (max-width: 900px) {
+    .cards { flex-direction: column; gap: 20px; }
+    .welcome { flex-direction: column; gap: 15px; text-align: center; }
+}
+
+/* ===== General Body ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* ===== Admin Container ===== */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #ff7eb3, #ff758c);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f6f8;
+}
+
+/* ===== Page Title ===== */
+.main-content h1 {
+    font-size: 32px;
+    color: #ff758c;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* ===== Table Container ===== */
+.table-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+/* ===== Table Styling ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+thead {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #ffe0eb;
+}
+
+tbody td {
+    padding: 12px;
+}
+
+/* ===== Action Buttons ===== */
+button.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button.edit-btn {
+    background-color: #ffd966;
+    color: #333;
+}
+
+button.edit-btn:hover {
+    background-color: #ffcc33;
+}
+
+button.delete-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+button.delete-btn:hover {
+    background-color: #ff4c4c;
+}
+
+/* ===== Scrollbar (Optional) ===== */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #ff758c;
+    border-radius: 4px;
+}
+
+
+
+/* =====  Blog.html General Body ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #1f2933;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+/* ===== Container ===== */
+.container {
+    padding: 30px;
+}
+
+/* ===== Page Heading ===== */
+.container h2 {
+    font-size: 28px;
+    color: #4f46e5;
+    margin-bottom: 20px;
+}
+
+/* ===== Table ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Table Header ===== */
+.table thead {
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    color: #fff;
+}
+
+.table th {
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* ===== Table Body ===== */
+.table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table tbody tr:hover {
+    background-color: #eef2ff;
+}
+
+/* ===== Status Badge ===== */
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.status.published {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status.pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+/* ===== Action Buttons ===== */
+.action-btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background-color: #60a5fa;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #3b82f6;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+
+/* ============================= */
+/* COMMENTS PAGE – ONE COLOUR */
+/* ============================= */
+
+body.comments-page {
+    background-color: #fefcff;   /* very faint lavender */
+    color: #333;
+}
+
+/* Navbar */
+body .comments-page .navbar {
+    background-color: #ede9fe;   /* same colour family */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .comments-page .navbar h1 {
+    font-size: 24px;
+    color: #5b21b6;
+}
+
+body .comments-page .navbar a {
+    color: #5b21b6;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: 500;
+}
+
+body .comments-page .navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.comments-page .container {
+    padding: 30px;
+}
+
+/* Heading */
+.comments-page .container h2 {
+    color: #5b21b6;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Table */
+.comments-page .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.comments-page .table thead {
+    background-color: #ede9fe;
+}
+
+.comments-page .table th {
+    padding: 12px;
+    text-align: left;
+    color: #5b21b6;
+}
+
+/* Table Body */
+.comments-page .table td {
+    padding: 12px;
+    border-bottom: 1px solid #ede9fe;
+}
+
+.comments-page .table tbody tr:hover {
+    background-color: #f5f3ff;
+}
+
+/* Action Buttons */
+.comments-page .action-btn {
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #ede9fe;
+    background-color: #f5f3ff;
+    color: #5b21b6;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.comments-page .action-btn:hover {
+    background-color: #ede9fe;
+}

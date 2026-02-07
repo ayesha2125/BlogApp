@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Users</title>
+    <link rel="stylesheet" href="../css/admin_style.css">
+</head>
+<body>
+<div class="admin-container">
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="users.html" class="active">Users</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="comments.html">Comments</a></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <h1>Manage Users</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="usersTableBody">
+                <!-- JS will populate -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+<script src="../js/admin.js"></script>
+</body>
+</html>

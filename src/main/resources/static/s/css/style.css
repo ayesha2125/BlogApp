@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* LOGIN PAGE BACKGROUND */
+.login-page {
+    background-image: url("../images/camera-circle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Center form */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SIMPLE LOGIN CONTAINER */
+.login-page .container {
+    background: darkgrey;
+    padding: 30px;
+    width: 320px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Heading */
+.login-page h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-page input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button */
+.login-page button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-page button:hover {
+    background: #000;
+}
+
+/* Link */
+.login-page a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* ================= REGISTER PAGE ================= */
+
+.register-page {
+    background-image: url("../images/keyglasses.jpg"); /* your register bg image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Register container */
+.register-page .container {
+    background: #e8f5e9;   /* faint green */
+    padding: 30px;
+    width: 340px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Register heading */
+.register-page h2 {
+    color: #1b5e20; /* dark green */
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.register-page input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #81c784;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button */
+.register-page button {
+    width: 100%;
+    padding: 10px;
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-page button:hover {
+    background: #1b5e20;
+}
+
+/* Link */
+.register-page a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+
+     /* HOME PAGE BACKGROUND */
+.home-page {
+    background-image: url("../images/cactus-plant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}
+
+/* Home content card */
+.home-container {
+    background: rgba(255, 255, 255, 0.92);
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Blog cards */
+.blog-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.blog-card h3 {
+    color: #ff1493;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    color: #444;
+}
+/* ===== SECTION ===== */
+.hero {
+    text-align: center;
+    padding-top: 80px 20px 60px;
+    color: #2b2b2b;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ff4f9a; /* Pinterest pink */
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero button {
+    background-color: #ff4f9a;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #e63c85;
+}
+
+/* ===== MINIMAL HEADER LINE ===== */
+.navbar {
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom: 2px solid #ff4f9a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar a {
+    color: #444;
+    font-weight: 300;
+}
+
+.navbar a:hover {
+    color: #ff4f9a;
+}
+/* ================= CREATE BLOG PAGE ================= */
+
+.create-blog-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe4ec, #f8fafc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Blog form card */
+.create-blog-page .container {
+    background: white;
+    width: 600px;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Heading */
+.create-blog-page h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff1493;
+    font-size: 28px;
+}
+
+/* Inputs & textarea */
+.create-blog-page input,
+.create-blog-page textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.create-blog-page textarea {
+    resize: none;
+}
+
+/* Publish button */
+.create-blog-page button {
+    width: 100%;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.create-blog-page button:hover {
+    background-color: #ff1493;
+}
+
+/* Back button */
+.create-blog-page .back-btn {
+    background-color: #e5e7eb;
+    color: #333;
+    margin-top: 20px;
+}
+
+.create-blog-page .back-btn:hover {
+    background-color: #d1d5db;
+}
+
+       /* =====  BLOG VIEW PAGE ===== */
+
+       .blog-view {
+           background: rgba(255, 255, 255, 0.96);
+           padding: 35px;
+           border-radius: 18px;
+           box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+       }
+
+       /* Blog Title */
+       .blog-view h1 {
+           color: #ff4f9a;
+           font-size: 32px;
+           margin-bottom: 8px;
+       }
+
+       /* Author + Date */
+       .blog-meta {
+           color: #888;
+           font-size: 14px;
+           margin-bottom: 25px;
+       }
+
+       /* Blog Content */
+       .blog-content {
+           font-size: 17px;
+           line-height: 1.8;
+           color: #333;
+           margin-bottom: 30px;
+       }
+
+       /* ❤️ Like Section */
+       .blog-actions {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           margin-bottom: 30px;
+       }
+
+       .blog-actions button {
+           background: linear-gradient(135deg, #ff69b4, #ff1493);
+           border: none;
+           color: white;
+           padding: 10px 22px;
+           border-radius: 30px;
+           font-size: 16px;
+           cursor: pointer;
+           transition: transform 0.2s, box-shadow 0.2s;
+       }
+
+       .blog-actions button:hover {
+           transform: scale(1.05);
+           box-shadow: 0 8px 18px rgba(255,105,180,0.4);
+       }
+
+       /* ===== COMMENTS ===== */
+
+       #commentList {
+           margin-top: 20px;
+       }
+
+       /* Individual Comment */
+       .comment {
+           background: #fff0f7;
+           border-left: 4px solid #ff69b4;
+           padding: 14px 18px;
+           border-radius: 12px;
+           margin-bottom: 12px;
+       }
+
+       .comment strong {
+           color: #ff1493;
+       }
+
+       /* Comment Box */
+       #commentForm {
+           background: #f8f9ff;
+           padding: 18px;
+           border-radius: 16px;
+           margin-top: 25px;
+       }
+
+       #commentForm textarea {
+           width: 100%;
+           height: 90px;
+           border-radius: 12px;
+           border: 1px solid #ddd;
+           padding: 12px;
+           font-size: 15px;
+           resize: none;
+       }
+
+       #commentForm textarea:focus {
+           border-color: #ff69b4;
+           outline: none;
+       }
+
+       /* Comment Button */
+       #commentForm button {
+           margin-top: 12px;
+           background: linear-gradient(135deg, #6dd5a7, #3cb371);
+           border: none;
+           color: white;
+           padding: 10px 22px;
+           border-radius: 25px;
+           font-size: 15px;
+           cursor: pointer;
+       }
+
+       #commentForm button:hover {
+           opacity: 0.9;
+       }
+
+       /* Back Button */
+       .back-btn {
+           margin-top: 30px;
+           background-color: #444;
+           color: white;
+           padding: 10px 22px;
+           border-radius: 20px;
+       }
